@@ -90,7 +90,8 @@ def backward_search():
             print time.ctime()
         else:
             n_back_bad=n_back_bad+1
-  
+ 
+time.sleep(5)
 fsT=threading.Thread(target=forward_search)
 bsT=threading.Thread(target=backward_search)
 fsT.daemon=True
